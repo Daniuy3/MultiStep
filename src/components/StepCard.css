@@ -1,0 +1,400 @@
+@import url(./../root.css);
+
+@media (min-width: 768px) { 
+    #root{
+        display: flex;
+        width: 66.5%;
+        margin: 0 auto;
+        margin-top: 12rem;
+        border-radius: 1rem;
+        padding: 2rem;
+        background-color: white;
+        height: 69vh;
+    }
+}
+.stepCard{
+    background-color: var(--Magnolia);
+}
+@media (min-width: 768px) { 
+    .stepCard{
+        background-color: White;
+    }
+}
+.stepCard__container{
+    width: 80%;
+    margin: 0 auto;
+
+    border-radius: 1rem;
+    padding: 4rem 2rem;
+    
+    transform: translateY(-9rem);
+    background-color: var(--White);
+}
+@media (min-width: 768px) { 
+    .stepCard__container{
+        transform: translateY(0);
+        background-color: transparent;
+        padding-left: 0;
+        width: auto;
+        margin-left: 7rem;
+
+        position: relative;
+    }
+    .stepCard__plan-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+}
+.stepCard__heading{
+    color: var(--MarineBlue);
+    font-size: 3rem;
+    font-weight: 900;
+}
+@media (min-width: 768px) { 
+    .stepCard__heading{
+        font-size: 3.3rem;
+    }
+}
+.stepCard__text{
+    margin-top: 2rem;
+    color: var(--CoolGray);
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+@media (min-width: 768px) { 
+    .stepCard__text{
+        margin-top: 0.8rem;
+        font-size: 1.7rem;
+    }
+    .stepCard__meta{
+        margin-left: 4rem;
+    }
+}
+.form{
+    width: 100%;
+    margin-top: 2.8rem;
+}
+.form__label{
+    color: var(--MarineBlue);
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.form__label:not(:first-of-type){
+    margin-top: 2rem;
+}
+.form__input{
+    padding: 1.6rem;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
+    border: 1px solid var(--LightGray);
+    border-radius: 0.5rem;
+
+    
+}
+.form__input::placeholder{
+    color: var(--CoolGray);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.stepCard__buton-container{
+    background-color: var(--White);
+    padding:  2rem;
+    display: flex;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    
+}
+@media (min-width: 768px) { 
+    .stepCard__buton-container{
+        display: none;
+    }
+}
+.stepCard__buton{
+    margin-left: auto;
+
+    padding: 1.5rem 2.5rem;
+    background-color: var(--MarineBlue);
+
+    border: none;
+    border-radius: 0.5rem;
+
+    color: var(--White);
+    font-size: 1.8rem;
+}
+.stepCard__buton--last{
+    margin-left: 0;
+    margin-right: auto;
+}
+.stepCard__buton:hover{
+    cursor: pointer;
+}
+.stepCard__buton--confirm{
+    background-color: var(--PurplishBlue);
+}
+/* Segundo paso */
+
+.plan{
+    
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    border-radius: 1rem;
+    border: 1px solid var(--CoolGray);
+
+    display: flex;
+    gap: 1rem;
+    align-items: left;
+    align-content: flex-start;
+
+
+}
+@media (min-width: 768px) { 
+    .plan{
+        flex-direction: column;
+        height: 15rem;
+        align-items: left;
+    }
+}
+.stepCard__buton-container--inside{
+    transform: translateY(5rem);
+    display: flex;
+}
+.plan--active{
+    border-color: var(--PurplishBlue);
+    background-color: var(--Alabaster);
+}
+.plan:hover{
+    cursor: pointer;
+}
+.plan__heading{
+    color: var(--MarineBlue);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.plan__price{
+    color: var(--CoolGray);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.plan__text{
+    color: var(--MarineBlue);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.plan__meta{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+@media (min-width: 768px) { 
+    .plan__meta{
+        margin-top: auto;
+    }
+}
+.change-price{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 1rem;
+    background-color: var(--Alabaster);
+}
+.selector{
+    width: 5rem;
+    height: 2rem;
+
+    background-color: var(--MarineBlue);
+    border-radius: 1rem;
+}
+.change-price__text{
+    font-size: 1.6rem;
+    color: var(--LightGray);
+    font-weight: 600;
+
+
+}
+.change-price__text:hover{
+    cursor: pointer;
+}
+.change-price--active{
+    color: var(--MarineBlue);
+}
+.selector{
+    display: flex;
+    align-items: center;
+    padding: 0 0.1rem;
+}
+.circle{
+    height: 1.5rem;
+    width: 1.5rem;
+
+    border-radius: 50%;
+    background-color: white;
+    margin-right: auto;
+
+    transition: transform 0.3s;
+    transform: translateX(0);
+}
+.circle--active{
+    transform: translateX(3.5rem);
+}
+
+/* 3er step */
+.pick--container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+@media (min-width: 768px) { 
+    .pick--container{
+        margin: 4rem;
+        width: 100%;
+    }
+}
+.pick{
+    border-radius: 1rem;
+    border: 1px solid var(--LightGray);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+}
+@media (min-width: 768px) { 
+    .pick{
+        width: 41rem;
+        height: 6rem;
+    }
+}
+.pick--active{
+    border-color: var(--PurplishBlue);
+}
+.pick--active .square{
+    background-image: url(./../../public/images/check.svg);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--PurplishBlue);
+    outline: none;
+}
+.pick:hover{
+    cursor: pointer;
+}
+.pick__heading{
+    color: var(--MarineBlue);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.pick__text{
+    color: var(--CoolGray);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.pick__price-container{
+    margin-left: auto;
+}
+.pick__price{
+    color: var(--PurplishBlue);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.square{
+    width: 2rem;
+    height: 2rem;
+
+    outline: 1px solid var(--LightGray);
+    border-radius: 0.5rem;
+
+    overflow: hidden;
+}
+.feedback{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    background-color: var(--Alabaster);
+    border-radius: 1rem;
+}
+.feedback__meta{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--LightGray)
+}
+.feedback__heading{
+    color: var(--MarineBlue);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.feedback__link{
+    color: var(--CoolGray);
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.feedback__meta-price{
+    margin-left: auto;
+    color: var(--MarineBlue);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.feedback__add{
+    color: var(--CoolGray);
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.feedback__add-price{
+    color: var(--MarineBlue);
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+.stepCard__total{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total__text{
+    color: var(--CoolGray);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.total__price{
+    color: var(--PurplishBlue);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.stepCard__meta--verified{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.stepCard__img{
+    width: 6rem;
+    height: 6rem;
+}
+.stepCard__img img {
+    height: 100%;
+    object-fit: cover;
+}

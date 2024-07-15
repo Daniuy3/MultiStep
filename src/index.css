@@ -1,0 +1,15 @@
+@import url(./root.css);
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; /**10 px == a 1 rem*/
+
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--Magnolia);
+}
+*, *:before, *after{
+  box-sizing: inherit;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
